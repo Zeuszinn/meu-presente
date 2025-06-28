@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Você aceita namorar comigo?</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Você aceita namorar comigo?</h1>
+    <button id="sim">Sim</button>
+    <button id="nao">Não</button>
+  </div>
+  <script>
+    document.getElementById('sim').onclick = () => location.href = 'aceita.html';
+    const nao = document.getElementById('nao');
+    nao.onmouseover = () => {
+      nao.style.position = 'relative';
+      nao.style.left = Math.random() * 200 - 100 + 'px';
+      nao.style.top = Math.random() * 100 - 50 + 'px';
+    };
+  </script>
+</body>
+</html>
